@@ -1,0 +1,188 @@
+.container {  display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    background-color: #fff;
+    padding: 10px;
+    grid-template-areas:
+      ". . . . . preto preto preto preto preto . . . . ."
+      ". . . preto4 preto4 amarelo3 amarelo3 amarelo3 amarelo3 amarelo3 preto5 preto5 . . ."
+      ". . pt amarelo2 amarelo2 amarelo2 amarelo2 amarelo2 amarelo2 amarelo2 amarelo2 amarelo2 pt1 . ."
+      ". pt2 amarelo1 amarelo1 amarelo1 amarelo1 amarelo1 amarelo1 amarelo1 amarelo1 amarelo1 amarelo1 amarelo1 pt3 ."
+      ". pt2 amarelo amarelo amarelo amarelo amarelo amarelo amarelo amarelo amarelo amarelo amarelo pt3 ."
+      "preto2 preto8 preto8 preto8 preto8 preto8 preto8 preto8 preto8 preto8 preto8 preto8 preto8 preto8 preto7"
+      "preto2 amar1 pt10 pt11 branco branco1 preto9 preto9 preto9 preto9 branco2 branco2 pt15 amar2 preto7"
+      "preto2 amar1 pt10 pt11 pt12 branco1 pt14 ami3 pt19 pt18 pt16 branco3 pt15 amar2 preto7"
+      "preto2 amar1 ami pt11 pt12 pt13 amarelo12 amarelo12 amarelo12 pt18 pt16 pt17 ami1 amar2 preto7"
+      "preto2 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 amarelo4 preto7"
+      ". pt4 amarelo5 amarelo5 amarelo5 amarelo5 amarelo5 amarelo5 amarelo5 amarelo5 amarelo5 amarelo5 amarelo5 pt9 ."
+      ". pt4 amarelo6 amarelo6 amarelo6 pt20 amarelo11 amarelo11 amarelo11 pt21 amarelo7 amarelo7 amarelo7 pt9 ."
+      ". . pt5 amarelo8 amarelo8 amarelo8 preto10 preto10 preto10 amarelo9 amarelo9 amarelo9 pt8 . ."
+      ". . . pt6 pt6 amarelo10 amarelo10 amarelo10 amarelo10 amarelo10 pt7 pt7 . . ."
+      ". . . . . preto6 preto6 preto6 preto6 preto6 . . . . .";
+  }
+  
+  .preto { grid-area: preto;
+    /* height: auto; */
+    background-color: black; }
+  
+  .preto2 { grid-area: preto2;
+    /* height: auto; */
+    background-color: black; }
+  
+  .preto4 { grid-area: preto4;
+    background-color: black; }
+  
+  .preto5 { grid-area: preto5;
+    background-color: black; }
+  
+  .pt { grid-area: pt; 
+    background-color: black;}
+  
+  .pt1 { grid-area: pt1;
+    background-color: black; }
+  
+  .pt2 { grid-area: pt2; 
+    background-color: black;}
+  
+  .preto6 { grid-area: preto6;
+    background-color: black; }
+  
+  .preto7 { grid-area: preto7; 
+    background-color: black;}
+  
+  .pt3 { grid-area: pt3;
+    background-color: black; }
+  
+  .pt4 { grid-area: pt4;
+    background-color: black; }
+  
+  .pt5 { grid-area: pt5;
+    background-color: black; }
+  
+  .pt6 { grid-area: pt6; 
+    background-color: black;}
+  
+  .pt7 { grid-area: pt7; 
+    background-color: black;}
+  
+  .pt8 { grid-area: pt8;
+    background-color: black; }
+  
+  .pt9 { grid-area: pt9;
+    background-color: black; }
+  
+  .preto8 { grid-area: preto8; 
+    background-color: black;}
+  
+  .pt10 { grid-area: pt10;
+    background-color: black; }
+  
+  .pt11 { grid-area: pt11;
+    background-color: black; }
+  
+  .branco { grid-area: branco; 
+    background-color: #fff;}
+  
+  .branco1 { grid-area: branco1;
+    background-color: #fff; }
+  
+  .pt12 { grid-area: pt12;
+    background-color: black;}
+  
+  .pt13 { grid-area: pt13; 
+    background-color: black;}
+  
+  .preto9 { grid-area: preto9;
+    background-color: black; }
+  
+  .pt14 { grid-area: pt14;
+    background-color: black; }
+  
+  .pt15 { grid-area: pt15;
+    background-color: black; }
+  
+  .branco2 { grid-area: branco2; 
+    background-color: #fff;}
+  
+  .branco3 { grid-area: branco3; 
+    background-color: #fff;}
+  
+  .pt16 { grid-area: pt16;
+    background-color: black; }
+  
+  .pt17 { grid-area: pt17; 
+    background-color: black;}
+  
+  .pt18 { grid-area: pt18;
+    background-color: black; }
+  
+  .pt19 { grid-area: pt19;
+    background-color: black; }
+  
+  .preto10 { grid-area: preto10;
+    background-color: black; }
+  
+  .pt20 { grid-area: pt20; 
+    background-color: black;}
+  
+  .pt21 { grid-area: pt21; 
+    background-color: black;}
+  
+  .amarelo { grid-area: amarelo;
+    background-color: yellow; }
+  
+  .amarelo1 { grid-area: amarelo1;
+    background-color: yellow; }
+  
+  .amarelo2 { grid-area: amarelo2;
+    background-color: yellow; }
+  
+  .amarelo3 { grid-area: amarelo3;
+    background-color: yellow; }
+  
+  .amarelo4 { grid-area: amarelo4; 
+    background-color: yellow;}
+  
+  .amarelo5 { grid-area: amarelo5; 
+    background-color: yellow;}
+  
+  .amar1 { grid-area: amar1;
+    background-color: yellow; }
+  
+  .amar2 { grid-area: amar2;
+    background-color: yellow; }
+  
+  .ami { grid-area: ami;
+    background-color: yellow; }
+  
+  .ami1 { grid-area: ami1;
+    background-color: yellow; }
+  
+  .amarelo6 { grid-area: amarelo6;
+    background-color: yellow; }
+  
+  .amarelo7 { grid-area: amarelo7; 
+    background-color: yellow;}
+  
+  .amarelo8 { grid-area: amarelo8;
+    background-color: yellow; }
+  
+  .amarelo9 { grid-area: amarelo9;
+    background-color: yellow; }
+  
+  .amarelo10 { grid-area: amarelo10;
+    background-color: yellow; }
+  
+  .amarelo11 { grid-area: amarelo11;
+    background-color: yellow; }
+  
+  .amarelo12 { grid-area: amarelo12;
+    background-color: yellow; }
+  
+  .ami3 { grid-area: ami3;
+    background-color: yellow; }
+  
+        
