@@ -1,202 +1,335 @@
 .container {  display: grid;
-    grid-template-columns: 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px;
-    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-columns: 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px;
+    grid-template-rows: 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px;
     grid-auto-columns: 1fr;
-    column-gap: 5px;
-    row-gap: 3px;
-    grid-auto-flow: row;
-    margin: auto;
-    /* padding: 10px; */
-    /* margin-left: 15px; */
-    /* border: auto solid antiquewhite; */
+    grid-auto-rows: 1fr;
+    gap: 3px 3px;
+    padding: 25px;
+    margin: 10px;
+    border: 30 solid rgb(252, 228, 191);
     background-color: black;
+    grid-auto-flow: row;
+ 
+
     grid-template-areas:
-      "bandeira bandeira bandeira vaso carretel carretel jp2 jp2 demo2 demo2 demo2 demo2 bonequinho-chines2 bonequinho-chines2 kimono2 kimono2 kimono2 kimono2"
-      "mapa mapa mapa vaso carretel carretel jp2 jp2 vaso3 vaso3 corneta corneta bonequinho-chines2 bonequinho-chines2 kimono2 kimono2 kimono2 kimono2"
-      "vaso2 bambu bambu bambu monalisa monalisa monalisa monalisa carretel2 carretel2 carretel2 carretel2 carretel2 carretel2 flor flor domino2 domino2"
-      "vaso2 bambu bambu bambu teatro teatro teatro teatro carretel2 carretel2 carretel2 carretel2 carretel2 carretel2 mapa3 mapa3 mapa3 mapa3"
-      "vaso2 polvo polvo polvo teatro teatro teatro teatro agua agua sushi3 sushi3 onda2 onda2 portal2 portal2 portal2 portal2"
-      "demo demo jp jp sushi2 sushi2 sushi2 sushi2 castelo castelo castelo castelo onda2 onda2 portal2 portal2 portal2 portal2"
-      "demo demo jp jp teatro2 teatro2 onda onda castelo castelo castelo castelo onda2 onda2 flor2 flor2 carretel3 carretel3"
-      "bonequinho-chines bonequinho-chines bonequinho-chines bonequinho-chines teatro2 teatro2 onda onda polvo3 polvo3 polvo3 polvo3 polvo3 polvo3 flor2 flor2 carretel3 carretel3"
-      "portal portal portal domino kimono kimono kimono kimono corneta2 corneta2 cone cone cone cone flor2 flor2 carretel3 carretel3"
-      "portal portal portal domino kimono kimono kimono kimono corneta2 corneta2 cone cone cone cone agua2 agua2 agua2 agua2"
-      "sushi sushi sushi domino bandeira2 bandeira2 bandeira2 bandeira2 corneta2 corneta2 castelo2 castelo2 bambu2 bambu2 montanha montanha montanha montanha";
+      "🎏🎏 🎏🎏 🎏🎏 ⚱ 🏮 🏮 JP- JP- 👹- 👹- 👹- 👹- 🎎 🎎 👘- 👘- 👘- 👘-"
+      "🗾 🗾 🗾 ⚱ 🏮 🏮 JP- JP- ⚱-- ⚱-- 📯 📯 🎎 🎎 👘- 👘- 👘- 👘-"
+      "⚱- 🎋 🎋 🎋 🖼 🖼 🖼 🖼 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🌸- 🌸- 🎴- 🎴-"
+      "⚱- 🎋 🎋 🎋 🎭- 🎭- 🎭- 🎭- 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🗾- 🗾- 🗾- 🗾-"
+      "⚱- 🐙 🐙 🐙 🎭- 🎭- 🎭- 🎭- 🍶 🍶 🍱-- 🍱-- 🌊- 🌊- ⛩- ⛩- ⛩- ⛩-"
+      "👹 👹 JP JP 🍱- 🍱- 🍱- 🍱- 🏯 🏯 🏯 🏯 🌊- 🌊- ⛩- ⛩- ⛩- ⛩-"
+      "👹 👹 JP JP 🎭 🎭 🌊 🌊 🏯 🏯 🏯 🏯 🌊- 🌊- 🌸 🌸 🏮- 🏮-"
+      "🎎🎎🎎 🎎🎎🎎 🎎🎎🎎 🎎🎎🎎 🎭 🎭 🌊 🌊 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🌸 🌸 🏮- 🏮-"
+      "⛩ ⛩ ⛩ 🎴 👘 👘 👘 👘 📯- 📯- 🗼 🗼 🗼 🗼 🌸 🌸 🏮- 🏮-"
+      "⛩ ⛩ ⛩ 🎴 👘 👘 👘 👘 📯- 📯- 🗼 🗼 🗼 🗼 🍶- 🍶- 🍶- 🍶-"
+      "🍱 🍱 🍱 🎴 🎏🎏- 🎏🎏- 🎏🎏- 🎏🎏- 📯- 📯- 🏯- 🏯- 🎋- 🎋- 🗻 🗻 🗻 🗻";
   }
   
-  .vaso2 { grid-area: vaso2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🎏🎏 { grid-area: 🎏🎏; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    align-content: center;
+    font-size: 50px;}
   
-  .demo { grid-area: demo; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🗾 { grid-area: 🗾; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
   
-  .jp { grid-area: jp; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .⚱ { grid-area: ⚱;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 80px;
+    align-content: center;}
   
-  .bonequinho-chines { grid-area: bonequinho-chines;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .⚱- { grid-area: ⚱-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 90px;
+    align-content: center;}
   
-  .portal { grid-area: portal;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🎋 { grid-area: 🎋; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 64px;
+    align-content: center;}
   
-  .sushi { grid-area: sushi;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🐙 { grid-area: 🐙; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
   
-  .domino { grid-area: domino;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .👹 { grid-area: 👹; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 64px;
+    align-content: center;}
   
-  .polvo { grid-area: polvo;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .JP { grid-area: JP;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 80px;
+    align-content: center; }
   
-  .bambu { grid-area: bambu; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🎎🎎🎎 { grid-area: 🎎🎎🎎; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
   
-  .bandeira { grid-area: bandeira;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .⛩ { grid-area: ⛩; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 100px;
+    align-content: center;}
   
-  .mapa { grid-area: mapa; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🎴 { grid-area: 🎴; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 64px;
+    align-content: center;}
   
-  .vaso { grid-area: vaso;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🍱 { grid-area: 🍱;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
   
-  .carretel { grid-area: carretel; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🎏🎏- { grid-area: 🎏🎏-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
   
-  .jp2 { grid-area: jp2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .👘 { grid-area: 👘; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 100px;
+    align-content: center;}
   
-  .monalisa { grid-area: monalisa;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🎭 { grid-area: 🎭; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 70px;
+    align-content: center;}
   
-  .teatro { grid-area: teatro;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🌊 { grid-area: 🌊; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 70px;
+    align-content: center;}
   
-  .sushi2 { grid-area: sushi2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🍱- { grid-area: 🍱-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
   
-  .teatro2 { grid-area: teatro2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🎭- { grid-area: 🎭-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 85px;
+    align-content: center; }
   
-  .onda { grid-area: onda; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🖼 { grid-area: 🖼; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 70px;
+    align-content: center;}
   
-  .kimono { grid-area: kimono; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🏮 { grid-area: 🏮;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 85px;
+    align-content: center; }
   
-  .bandeira2 { grid-area: bandeira2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .JP- { grid-area: JP-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 80px;
+    align-content: center; }
   
-  .demo2 { grid-area: demo2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .👹- { grid-area: 👹-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 55px;
+    align-content: center; }
   
-  .vaso3 { grid-area: vaso3; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .⚱-- { grid-area: ⚱--;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 80px;
+    align-content: center; }
   
-  .corneta { grid-area: corneta;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .📯 { grid-area: 📯;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
   
-  .carretel2 { grid-area: carretel2; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🏮🏮🏮 { grid-area: 🏮🏮🏮;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 80px;
+    align-content: center; }
   
-  .bonequinho-chines2 { grid-area: bonequinho-chines2; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🎎 { grid-area: 🎎;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 80px;
+    align-content: center; }
   
-  .agua { grid-area: agua;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🍶 { grid-area: 🍶; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 60px;
+    align-content: center;}
   
-  .sushi3 { grid-area: sushi3;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🍱-- { grid-area: 🍱--; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
   
-  .onda2 { grid-area: onda2; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🏯 { grid-area: 🏯; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 90px;
+    align-content: center;}
   
-  .castelo { grid-area: castelo; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🌊- { grid-area: 🌊-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 100px;
+    align-content: center; }
   
-  .polvo3 { grid-area: polvo3;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🐙🐙🐙🐙🐙 { grid-area: 🐙🐙🐙🐙🐙;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
   
-  .corneta2 { grid-area: corneta2; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .📯- { grid-area: 📯-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 100px;
+    align-content: center;}
   
-  .cone { grid-area: cone; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🗼 { grid-area: 🗼;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 100px;
+    align-content: center; }
   
-  .castelo2 { grid-area: castelo2; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🏯- { grid-area: 🏯-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 60px;
+    align-content: center; }
   
-  .bambu2 { grid-area: bambu2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🎋- { grid-area: 🎋-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 60px;
+    align-content: center; }
   
-  .kimono2 { grid-area: kimono2; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🗻 { grid-area: 🗻;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 60px;
+    align-content: center; }
   
-  .flor { grid-area: flor;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🍶- { grid-area: 🍶-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 60px;
+    align-content: center;}
   
-  .domino2 { grid-area: domino2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🌸 { grid-area: 🌸;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 100px;
+    align-content: center; }
   
-  .mapa3 { grid-area: mapa3; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🏮- { grid-area: 🏮-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 90px;
+    align-content: center; }
   
-  .portal2 { grid-area: portal2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .⛩- { grid-area: ⛩-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 100px;
+    align-content: center;}
   
-  .flor2 { grid-area: flor2;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🗾- { grid-area: 🗾-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 60px;
+    align-content: center;}
   
-  .carretel3 { grid-area: carretel3;
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986); }
+  .🌸- { grid-area: 🌸-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 60px;
+    align-content: center; }
   
-  .agua2 { grid-area: agua2; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .🎴- { grid-area: 🎴-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 60px;
+    align-content: center;}
   
-  .montanha { grid-area: montanha; 
-    border: 5px solid rgb(221, 219, 184);
-    background-color: rgba(20, 117, 245, 0.986);}
+  .👘- { grid-area: 👘-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 100px;
+    align-content: center; }
   

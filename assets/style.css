@@ -1,11 +1,12 @@
 .container {  display: grid;
-    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
-    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     background-color: #fff;
     padding: 10px;
+    justify-content: center;
     grid-template-areas:
       ". . . . . preto preto preto preto preto . . . . ."
       ". . . preto4 preto4 amarelo3 amarelo3 amarelo3 amarelo3 amarelo3 preto5 preto5 . . ."
