@@ -1,0 +1,335 @@
+.container {  display: grid;
+    grid-template-columns: 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px;
+    grid-template-rows: 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 3px 3px;
+    padding: 25px;
+    margin: 10px;
+    border: 30 solid rgb(252, 228, 191);
+    background-color: black;
+    grid-auto-flow: row;
+ 
+
+    grid-template-areas:
+      "🎏🎏 🎏🎏 🎏🎏 ⚱ 🏮 🏮 JP- JP- 👹- 👹- 👹- 👹- 🎎 🎎 👘- 👘- 👘- 👘-"
+      "🗾 🗾 🗾 ⚱ 🏮 🏮 JP- JP- ⚱-- ⚱-- 📯 📯 🎎 🎎 👘- 👘- 👘- 👘-"
+      "⚱- 🎋 🎋 🎋 🖼 🖼 🖼 🖼 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🌸- 🌸- 🎴- 🎴-"
+      "⚱- 🎋 🎋 🎋 🎭- 🎭- 🎭- 🎭- 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🏮🏮🏮 🗾- 🗾- 🗾- 🗾-"
+      "⚱- 🐙 🐙 🐙 🎭- 🎭- 🎭- 🎭- 🍶 🍶 🍱-- 🍱-- 🌊- 🌊- ⛩- ⛩- ⛩- ⛩-"
+      "👹 👹 JP JP 🍱- 🍱- 🍱- 🍱- 🏯 🏯 🏯 🏯 🌊- 🌊- ⛩- ⛩- ⛩- ⛩-"
+      "👹 👹 JP JP 🎭 🎭 🌊 🌊 🏯 🏯 🏯 🏯 🌊- 🌊- 🌸 🌸 🏮- 🏮-"
+      "🎎🎎🎎 🎎🎎🎎 🎎🎎🎎 🎎🎎🎎 🎭 🎭 🌊 🌊 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🐙🐙🐙🐙🐙 🌸 🌸 🏮- 🏮-"
+      "⛩ ⛩ ⛩ 🎴 👘 👘 👘 👘 📯- 📯- 🗼 🗼 🗼 🗼 🌸 🌸 🏮- 🏮-"
+      "⛩ ⛩ ⛩ 🎴 👘 👘 👘 👘 📯- 📯- 🗼 🗼 🗼 🗼 🍶- 🍶- 🍶- 🍶-"
+      "🍱 🍱 🍱 🎴 🎏🎏- 🎏🎏- 🎏🎏- 🎏🎏- 📯- 📯- 🏯- 🏯- 🎋- 🎋- 🗻 🗻 🗻 🗻";
+  }
+  
+  .🎏🎏 { grid-area: 🎏🎏; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    align-content: center;
+    font-size: 50px;}
+  
+  .🗾 { grid-area: 🗾; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .⚱ { grid-area: ⚱;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .⚱- { grid-area: ⚱-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🎋 { grid-area: 🎋; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🐙 { grid-area: 🐙; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .👹 { grid-area: 👹; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .JP { grid-area: JP;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🎎🎎🎎 { grid-area: 🎎🎎🎎; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .⛩ { grid-area: ⛩; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🎴 { grid-area: 🎴; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🍱 { grid-area: 🍱;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🎏🎏- { grid-area: 🎏🎏-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .👘 { grid-area: 👘; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🎭 { grid-area: 🎭; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🌊 { grid-area: 🌊; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🍱- { grid-area: 🍱-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🎭- { grid-area: 🎭-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🖼 { grid-area: 🖼; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🏮 { grid-area: 🏮;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .JP- { grid-area: JP-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .👹- { grid-area: 👹-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .⚱-- { grid-area: ⚱--;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .📯 { grid-area: 📯;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🏮🏮🏮 { grid-area: 🏮🏮🏮;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🎎 { grid-area: 🎎;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🍶 { grid-area: 🍶; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🍱-- { grid-area: 🍱--; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🏯 { grid-area: 🏯; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🌊- { grid-area: 🌊-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🐙🐙🐙🐙🐙 { grid-area: 🐙🐙🐙🐙🐙;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .📯- { grid-area: 📯-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🗼 { grid-area: 🗼;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🏯- { grid-area: 🏯-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🎋- { grid-area: 🎋-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🗻 { grid-area: 🗻;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🍶- { grid-area: 🍶-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🌸 { grid-area: 🌸;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🏮- { grid-area: 🏮-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .⛩- { grid-area: ⛩-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🗾- { grid-area: 🗾-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .🌸- { grid-area: 🌸-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  
+  .🎴- { grid-area: 🎴-; 
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center;}
+  
+  .👘- { grid-area: 👘-;
+    border: 5px solid rgb(252, 228, 194);
+    background-color: rgba(3, 70, 156, 0.986);
+    text-align: center;
+    font-size: 50px;
+    align-content: center; }
+  

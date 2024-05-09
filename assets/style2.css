@@ -1,0 +1,202 @@
+.container {  display: grid;
+    grid-template-columns: 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px 101px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-auto-columns: 1fr;
+    column-gap: 5px;
+    row-gap: 3px;
+    grid-auto-flow: row;
+    margin: auto;
+    /* padding: 10px; */
+    /* margin-left: 15px; */
+    /* border: auto solid antiquewhite; */
+    background-color: black;
+    grid-template-areas:
+      "bandeira bandeira bandeira vaso carretel carretel jp2 jp2 demo2 demo2 demo2 demo2 bonequinho-chines2 bonequinho-chines2 kimono2 kimono2 kimono2 kimono2"
+      "mapa mapa mapa vaso carretel carretel jp2 jp2 vaso3 vaso3 corneta corneta bonequinho-chines2 bonequinho-chines2 kimono2 kimono2 kimono2 kimono2"
+      "vaso2 bambu bambu bambu monalisa monalisa monalisa monalisa carretel2 carretel2 carretel2 carretel2 carretel2 carretel2 flor flor domino2 domino2"
+      "vaso2 bambu bambu bambu teatro teatro teatro teatro carretel2 carretel2 carretel2 carretel2 carretel2 carretel2 mapa3 mapa3 mapa3 mapa3"
+      "vaso2 polvo polvo polvo teatro teatro teatro teatro agua agua sushi3 sushi3 onda2 onda2 portal2 portal2 portal2 portal2"
+      "demo demo jp jp sushi2 sushi2 sushi2 sushi2 castelo castelo castelo castelo onda2 onda2 portal2 portal2 portal2 portal2"
+      "demo demo jp jp teatro2 teatro2 onda onda castelo castelo castelo castelo onda2 onda2 flor2 flor2 carretel3 carretel3"
+      "bonequinho-chines bonequinho-chines bonequinho-chines bonequinho-chines teatro2 teatro2 onda onda polvo3 polvo3 polvo3 polvo3 polvo3 polvo3 flor2 flor2 carretel3 carretel3"
+      "portal portal portal domino kimono kimono kimono kimono corneta2 corneta2 cone cone cone cone flor2 flor2 carretel3 carretel3"
+      "portal portal portal domino kimono kimono kimono kimono corneta2 corneta2 cone cone cone cone agua2 agua2 agua2 agua2"
+      "sushi sushi sushi domino bandeira2 bandeira2 bandeira2 bandeira2 corneta2 corneta2 castelo2 castelo2 bambu2 bambu2 montanha montanha montanha montanha";
+  }
+  
+  .vaso2 { grid-area: vaso2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .demo { grid-area: demo; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .jp { grid-area: jp; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .bonequinho-chines { grid-area: bonequinho-chines;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .portal { grid-area: portal;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .sushi { grid-area: sushi;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .domino { grid-area: domino;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .polvo { grid-area: polvo;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .bambu { grid-area: bambu; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .bandeira { grid-area: bandeira;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .mapa { grid-area: mapa; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .vaso { grid-area: vaso;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .carretel { grid-area: carretel; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .jp2 { grid-area: jp2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .monalisa { grid-area: monalisa;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .teatro { grid-area: teatro;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .sushi2 { grid-area: sushi2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .teatro2 { grid-area: teatro2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .onda { grid-area: onda; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .kimono { grid-area: kimono; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .bandeira2 { grid-area: bandeira2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .demo2 { grid-area: demo2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .vaso3 { grid-area: vaso3; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .corneta { grid-area: corneta;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .carretel2 { grid-area: carretel2; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .bonequinho-chines2 { grid-area: bonequinho-chines2; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .agua { grid-area: agua;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .sushi3 { grid-area: sushi3;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .onda2 { grid-area: onda2; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .castelo { grid-area: castelo; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .polvo3 { grid-area: polvo3;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .corneta2 { grid-area: corneta2; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .cone { grid-area: cone; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .castelo2 { grid-area: castelo2; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .bambu2 { grid-area: bambu2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .kimono2 { grid-area: kimono2; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .flor { grid-area: flor;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .domino2 { grid-area: domino2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .mapa3 { grid-area: mapa3; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .portal2 { grid-area: portal2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .flor2 { grid-area: flor2;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .carretel3 { grid-area: carretel3;
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986); }
+  
+  .agua2 { grid-area: agua2; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
+  .montanha { grid-area: montanha; 
+    border: 5px solid rgb(221, 219, 184);
+    background-color: rgba(20, 117, 245, 0.986);}
+  
